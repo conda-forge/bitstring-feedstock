@@ -1,5 +1,5 @@
 {% set name = "bitstring" %}
-{% set version = "3.1.7" %}
+{% set version = "3.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fdf3eb72b229d2864fb507f8f42b1b2c57af7ce5fec035972f9566de440a864a
+  sha256: c2e327184804d74847ff6c4eb8a750c250d98cf32015311e4a791d8b5264625e
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Simple construction, analysis and modification of binary data.'
+  summary: Simple construction, analysis and modification of binary data.
   doc_url: https://bitstring.readthedocs.io
   dev_url: https://github.com/scott-griffiths/bitstring
 
