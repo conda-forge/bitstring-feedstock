@@ -1,11 +1,11 @@
-About bitstring
-===============
+About bitstring-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bitstring-feedstock/blob/main/LICENSE.txt)
 
 Home: http://scott-griffiths.github.io/bitstring
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bitstring-feedstock/blob/main/LICENSE.txt)
 
 Summary: Simple construction, analysis and modification of binary data.
 
