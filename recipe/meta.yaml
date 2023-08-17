@@ -19,6 +19,7 @@ requirements:
     - python >=3.7
     - pip
   run:
+    - bitarray >=2.8.0
     - python >=3.7
 
 test:
