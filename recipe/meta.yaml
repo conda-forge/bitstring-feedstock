@@ -1,5 +1,5 @@
 {% set name = "bitstring" %}
-{% set version = "4.0.2" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a391db8828ac4485dd5ce72c80b27ebac3e7b989631359959e310cd9729723b2
+  sha256: b1672fb31721dbb6c809e76a3a19ac76a608e1f8fcacce9349ae2b72b1917b20
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
     - python >=3.7
     - pip
   run:
+    - bitarray >=2.8.0
     - python >=3.7
 
 test:
