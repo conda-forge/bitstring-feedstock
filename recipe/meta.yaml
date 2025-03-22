@@ -20,7 +20,7 @@ requirements:
     - pip
     - setuptools >=61
   run:
-    - bitarray >=3.0.0,<3.1
+    - bitarray >=3.0.0,<4.0
     - python >={{ python_min }}
 
 test:
