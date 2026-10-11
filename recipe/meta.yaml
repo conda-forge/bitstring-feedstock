@@ -1,13 +1,13 @@
 {% set name = "bitstring" %}
-{% set version = "4.4.0" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e682ac522bb63e041d16cbc9d0ca86a4f00194db16d0847c7efe066f836b2e37
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 01d876b6e7bbd912bfa3ae1d028ed419ed2193245fe2337f21d30afaa391c053
 
 build:
   noarch: python
