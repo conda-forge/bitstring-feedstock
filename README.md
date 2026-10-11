@@ -11,7 +11,7 @@ Summary: Simple construction, analysis and modification of binary data.
 
 Development: https://github.com/scott-griffiths/bitstring
 
-Documentation: https://bitstring.readthedocs.io
+Documentation: https://bitstring.readthedocs.io/
 
 Current build status
 ====================
