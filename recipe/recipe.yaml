@@ -1,0 +1,45 @@
+context:
+  version: "5.0.0"
+
+package:
+  name: bitstring
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/b/bitstring/bitstring-${{ version }}.tar.gz
+  sha256: 01d876b6e7bbd912bfa3ae1d028ed419ed2193245fe2337f21d30afaa391c053
+
+build:
+  noarch: python
+  script: python -m pip install . -vv
+  number: 0
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools >=61
+  run:
+    - python >=${{ python_min }}
+    - tibs >=2.0.2,<3.0
+
+tests:
+  - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+      imports:
+        - bitstring
+      pip_check: true
+
+about:
+  homepage: http://scott-griffiths.github.io/bitstring
+  summary: 'Simple construction, analysis and modification of binary data.'
+  license: MIT
+  license_file: LICENSE
+  documentation: https://bitstring.readthedocs.io
+  repository: https://github.com/scott-griffiths/bitstring
+
+extra:
+  recipe-maintainers:
+    - m-rossi
